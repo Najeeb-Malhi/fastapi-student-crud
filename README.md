@@ -54,3 +54,9 @@ Install the dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+## API Documentation
+
+The API includes interactive Swagger documentation:
+
+![Swagger UI](project2_swagger-ui.png)
