@@ -59,4 +59,4 @@ pip install -r requirements.txt
 
 The API includes interactive Swagger documentation:
 
-![Swagger UI](project2_swagger-ui.png)
+![Swagger UI](Screenshots/project2_swagger-ui.png)
