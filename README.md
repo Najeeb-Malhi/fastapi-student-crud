@@ -17,20 +17,28 @@ Student CRUD REST API built with FastAPI, SQLAlchemy and SQLite. Developed as pa
 
 ## Technologies
 
-- Python
-- FastAPI
-- SQLAlchemy
-- SQLite
-- Pydantic
-- Uvicorn
+- **Python**
+- **FastAPI** — REST API framework
+- **SQLAlchemy** — ORM for database interaction
+- **SQLite** — Relational database
+- **Pydantic** — Request and response validation
+- **Uvicorn** — ASGI server
+## Database Model
 
+  
+| Field | Type | Description |
+|---|---|---|
+| `id` | Integer | Primary key |
+| `name` | String | Student name |
+| `dept` | String | Student department |
+| `reg_no` | String | Unique registration number |
 ## API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
-| POST | `/student/` | Create a new student |
-| GET | `/student/{student_id}` | Get a student by ID |
-| GET | `/students/` | Get all students |
+| POST | `/student/` | Create a new student | 
+| GET | `/student/{student_id}` | Get a student by ID | 
+| GET | `/students/` | Get all students | 
 | PUT | `/student/{student_id}` | Update a student |
 | DELETE | `/student/{student_id}` | Delete a student |
 
@@ -38,7 +46,7 @@ Student CRUD REST API built with FastAPI, SQLAlchemy and SQLite. Developed as pa
 
 The project uses SQLite with SQLAlchemy ORM for database integration and persistent storage.
 
-The database file is automatically created when the application starts.
+The database file is automatically created when the application starts for the first time, then it loads the data everytime.
 
 ## Running the Project
 
